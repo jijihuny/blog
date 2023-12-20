@@ -1,7 +1,7 @@
-import Container from './container'
-import { EXAMPLE_PATH } from '../lib/constants'
+import Container from './container';
+import { EXAMPLE_PATH } from '../lib/constants';
 
-const Footer = () => {
+function Footer() {
   return (
     <footer className="bg-neutral-50 border-t border-neutral-200">
       <Container>
@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
       </Container>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
