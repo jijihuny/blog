@@ -1,14 +1,19 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import Container from './container';
+import NavigationBar from './navigation-bar';
 
-const Header = () => {
+function Header() {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
-      <Link href="/" className="hover:underline">
-        Blog
-      </Link>
-      .
-    </h2>
-  )
+    <header className="container flex flex-row justify-around items-center p-5 h-[5rem] bg-opacity-70 bg-white fixed [&+*]:pt-40">
+      <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight">
+        <Link href="/" className="hover:underline">
+          Blog
+        </Link>
+        .
+      </h2>
+      <NavigationBar menuList={['Development', 'Life', 'Portfolio']} />
+    </header>
+  );
 }
 
-export default Header
+export default Header;
