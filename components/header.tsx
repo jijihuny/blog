@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Container from './container';
 import NavigationBar from './navigation-bar';
 
 function Header() {
