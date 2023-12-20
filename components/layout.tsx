@@ -10,7 +10,7 @@ function Layout({ children }: Props) {
   return (
     <>
       <Meta />
-      <div className="min-h-screen px-5 flex flex-col items-center">
+      <div className="min-h-screen flex flex-col items-center">
         {/* <Alert preview={preview} /> */}
         <Header />
         <main>

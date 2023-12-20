@@ -7,14 +7,16 @@ type Props = {
 
 function NavigationBar({ menuList }: Props) {
   return (
-    <nav className="font-bold text-4xl flex justify-around flex-grow px-10">
+    <nav className="font-bold text-4xl flex justify-between">
       {
                     menuList
                       .map((menu) => (
-                        <Link key={menu} href={menu.startsWith('/') ? menu : `/${menu}`}>
+                        <span>
+                          <Link key={menu} className=' hover:underline' href={menu.startsWith('/') ? menu : `/${menu}`}>
                           {menu}
+                          </Link>
                           .
-                        </Link>
+                        </span>
                       ))
                     }
     </nav>
