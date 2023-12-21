@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Container from '../components/container';
 import MoreStories from '../components/more-stories';
-import HeroPost from '../components/hero-post';
 import Layout from '../components/layout';
 import { getAllPosts } from '../lib/api';
 import Post from '../interfaces/post';
@@ -11,15 +10,14 @@ type Props = {
 };
 
 export default function Index({ allPosts }: Props) {
-  const heroPost = allPosts[0];
-  const morePosts = allPosts.slice(1);
+  const morePosts = allPosts;
   return (
     <Layout>
       <Head>
         <title>어디로 나아갈 것인가</title>
       </Head>
       <Container>
-        {/* <NavigationBar menuList={['안녕', '굳']} /> */}
+        {/* <NavigationBar menuList={['안녕', '굳']} />
         {heroPost && (
         <HeroPost
           title={heroPost.title}
@@ -29,7 +27,7 @@ export default function Index({ allPosts }: Props) {
           slug={heroPost.slug}
           excerpt={heroPost.excerpt}
         />
-        )}
+        )} */}
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
       </Container>
     </Layout>
