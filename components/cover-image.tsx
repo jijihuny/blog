@@ -18,7 +18,7 @@ function CoverImage({ title, src, slug }: Props) {
       })}
       width={2000}
       height={1000}
-      style={{objectFit: 'cover'}}
+      style={{ objectFit: 'cover' }}
     />
   );
   return (
