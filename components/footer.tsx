@@ -1,5 +1,4 @@
 import Container from './container';
-import { EXAMPLE_PATH } from '../lib/constants';
 
 function Footer() {
   return (
@@ -7,8 +6,8 @@ function Footer() {
       <Container>
         <div className="p-12 lg:p-28 flex flex-col lg:flex-row justify-around items-center">
           <h5 className="text-[1em] lg:text-[1.5em] font-medium tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            <p >COPYRIGHT 2023. 이지훈</p>
-            <p className='text-[0.8em]'>dlwlgns2792@gmail.com</p>
+            <p>COPYRIGHT 2023. 이지훈</p>
+            <p className="text-[0.8em]">dlwlgns2792@gmail.com</p>
           </h5>
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
             <a
@@ -18,7 +17,7 @@ function Footer() {
               Github Profile
             </a>
             <a
-              href={`https://github.com/jijihuny/blog`}
+              href="https://github.com/jijihuny/blog"
               className="mx-3 font-bold hover:underline"
             >
               Repository
