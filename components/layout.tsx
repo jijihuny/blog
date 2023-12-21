@@ -12,7 +12,7 @@ function Layout({ children }: Props) {
       <Meta />
       <div className="min-h-screen flex flex-col items-center">
         {/* <Alert preview={preview} /> */}
-        <Header />
+        <Header menuList={['development', 'life', 'about']} />
         <main>
           {children}
         </main>
